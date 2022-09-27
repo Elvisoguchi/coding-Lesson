@@ -1,0 +1,255 @@
+body
+      {
+
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-content: center;
+			justify-items: center;
+			width: 100%;
+			height: 100vh;
+			background: black;
+		}
+
+		.two{
+			display: flex;
+			align-items: center;
+			justify-items: center;
+			/*border: 2px solid black;*/
+			width: 300px;
+			height: 200px;
+			position: absolute;
+			top: 30%;
+			left: 30%;
+		}
+
+		.two h1{
+			width: 12px;
+			border-radius: 10px;
+			height: 20px;
+			/*border: 2px solid black;*/
+			margin-left: 20px;
+			animation: musik 1s ease infinite;
+			background: white;
+		}
+
+		.two h1:nth-child(1){
+			animation-delay: 0.8s;
+			background: green;
+		}
+
+		.two h1:nth-child(2){
+			animation-delay: 0.6s;
+			background: #eb1768;
+			border-radius: 50%;
+		}
+
+		.two h1:nth-child(3){
+			animation-delay: 0.4s;
+			background: blue;
+		}
+
+		.two h1:nth-child(4){
+			animation-delay: 0.2s;
+			background: #247dee;
+			border-radius: 50%;
+		}
+
+		.two h1:nth-child(5){
+			animation-delay: 0.4s;
+			background: blue;
+		}
+		.two h1:nth-child(6){
+			animation-delay: 0.6s;
+			background: #eb1768;
+		}
+		.two h1:nth-child(7){
+			animation-delay: 0.8s;
+			background: green;
+		}
+
+		.two h1:nth-child(8){
+			animation-delay: 1s;
+			background: brown;
+		}
+		@keyframes musik{
+			0%{height: 20px}
+			50%{height: 40px}
+			100%{height: 20px}
+		}
+
+		.round{
+			border: 5px solid transparent;
+			width: 10px;
+			height: 10px;
+			position: fixed;
+			top:  20%;
+			left: 30%;
+			border-radius: 50%;
+			border-top: 5px solid green;
+			border-bottom: 5px solid green;
+			animation: round 0.7s linear infinite;
+		}
+
+		@keyframes round{
+			from{transform: rotate(0deg)}
+			to{transform: rotate(360deg)}
+			0%{height: 10px;}
+			50%{height: 3px;}
+			75%{height: 5px;}
+			100%{height: 10px;}s
+
+		}
+
+
+		.come{
+			display: flex;
+			border: 10px solid transparent;
+			width: 100px;
+			height: 100px;
+			position: fixed;
+			top: 5%;
+			left: 50%;
+			border-radius: 50%;
+			border-top: 10px solid red;
+			border-bottom: 10px solid yellow;
+			animation:come 1s infinite;
+		}
+	@keyframes come{
+	 from{transform:rotate(0deg)}
+	 to {transform: rotate(360deg) color}
+	 /*0%{height: 20px;}*/
+	 /*50%{height: 35%;}*/
+	 /*75%{height: 75px;}*/
+     /*/*100%{height: 100px}*/
+     }
+
+img#move{
+	position: absolute;
+	top: 26%;
+	animation: move 1s infinite;
+}
+
+@keyframes move {
+	0%{transform: translateX(10px); opacity: 1;}
+	50%{transform: translateX(400px); opacity: 0.4;}
+	100%{transform: translateX(50px); opacity: 0;}
+}
+
+img#sec{
+	position: absolute;
+	top: 50%;
+
+	border-radius: 20%;
+	animation: sec 10s infinite;
+}
+
+@keyframes sec {
+	0%{transform: translateX(30px); opacity: 1;}
+	50%{transform: translateX(400px); opacity: 0.4;}
+	100%{transform: translateX(550px); opacity: 0;}
+	from{transform: rotate(180deg);}
+	to{transform: rotate(360deg);} 
+
+}
+img#sec:hover{ border: 5px solid red; animation-play-state: paused;}
+
+.you{
+			display: flex;
+			align-items: center;
+			justify-items: center;
+			/*border: 2px solid blue;*/
+			width: 300px;
+			height: 200px;
+			position: absolute;
+			top: 70%;
+			left: 30%;	
+}
+.you h1{
+			width: 12px;
+			border-radius: 10px;
+			height: 20px;
+			/*border: 2px solid black;*/
+			margin-left: 20px;
+			animation: you 4s ease infinite;
+			background: white;
+		}
+
+		.you h1:nth-child(1){
+			animation-delay: 5s;
+			background: black;
+			color: red;
+			/*animation-timing-function: 10s;*/
+		}
+
+		.you h1:nth-child(2){
+			animation-delay: 5s;
+			background: black;
+			border-radius: 50%;
+			color: green;
+		}
+
+		.you h1:nth-child(3){
+			animation-delay:5s;
+			background: black;
+			color: orange;
+			}
+
+		.you h1:nth-child(4){
+			animation-delay: 5s;
+			background: black;
+			color: blue;
+				border-radius: 50%;
+		}
+
+		.you h1:nth-child(5){
+			animation-delay: 5s; 
+			background: black;
+			color: pink;
+		}
+		.you h1:nth-child(6){
+			animation-delay: 5s;
+			background: black;
+			color: red;
+		}
+		.you h1:nth-child(7){
+			animation-delay: 5s;
+			background: black;
+			color: white;
+		}
+	@keyframes you{
+			0%{transform: rotate(15deg); opacity: 0.7;}
+			25%{transform:rotate(49deg); opacity: 0.9;}
+			50%{ transform:rotate(110deg);  opacity: 0.6}
+            75%{transform: rotate(210deg); opacity: 0.4}
+			100%{transform: rotate(360deg); opacity: 0}
+		}
+.tet{ background-color: green;
+      height: 150px;
+      width: 190px;
+      border: 5px solid white;
+      }
+ .tet .ris { background-color: green;
+      height: 140px;
+      width: 180px;
+      border: 5px solid black;
+      }
+ .tet .ris h1{
+			width: 15px;
+			border-radius: 50px;
+			height: 10px;
+			border: 1px solid black;
+			margin-left: 10px;
+			animation: ris 10s ease infinite;
+			background: white;
+			margin: 5px;
+			top: 5%;
+
+ }
+ @keyframes ris {
+	0%{transform: translateY(30px); opacity: 1;}
+	50%{transform: translateY(400px); opacity: 0.4;}
+	100%{transform: translateY(550px); opacity: 0;}
+	from{transform: rotate(180deg);}
+	to{transform: rotate(360deg);
+		width: 10%; margin-left: 50%; margin-right: 50%;}

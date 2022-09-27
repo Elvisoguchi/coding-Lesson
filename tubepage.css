@@ -1,0 +1,70 @@
+*{
+ box-sizing: border-box
+}
+.head  #check{
+    visibility: hidden;
+    display: none;
+    -webkit-appearance: none;
+}
+.head{
+    width: 100%;
+    background-image:url(pizza-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.head .drd {
+    list-style: none;
+    padding: 5px;
+    display: block;
+/*    border: 2px solid;*/
+    width: 100%;
+    float: left;
+    position: relative;
+    top:-19px;
+}
+
+
+.head .drd li{
+    float: right;
+    text-align: center;
+    width: 120px;
+    
+}
+
+.head .drd li ul li{
+    display: none;
+    color: white;
+}
+.head .sidebar .bars,.times{
+    visibility: hidden;
+}
+.head .drd li:hover ul li{
+    display: block;
+    background-color: rgba(193, 209, 1, 0.7);
+    border-radius: 10px;
+}
+.head .drd li a i{
+    color: white;
+    padding: 2px;
+    position: relative;
+    left: 20px;
+    top: -1px;
+    font-size: 90%;
+}
+.head ul li a{
+    display: block;
+    background-color: rgba(0, 255, 88, 0.79);
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+    font-family: cursive;
+    font-size:12px;
+    border-radius: 10px;
+    text-shadow: 0 0 10px black, 0 0 50px black,0 0 70px black;
+}
+.head ul li a:hover{
+    background-color: greenyellow;
+    color: black;
+    transition: all 0.6s ease;
+    text-decoration: none;
+    cursor: pointer;

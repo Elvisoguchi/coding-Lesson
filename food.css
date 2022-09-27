@@ -1,0 +1,458 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+/*    overflow: hidden;*/
+}
+.head  #check{
+    visibility: hidden;
+    display: none;
+    -webkit-appearance: none;
+}
+.head{
+    width: 100%;
+    background-image:url(pizza-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.head .drd {
+    list-style: none;
+    padding: 5px;
+    display: block;
+/*    border: 2px solid;*/
+    width: 100%;
+    float: left;
+    position: relative;
+    top:-19px;
+}
+
+
+.head .drd li{
+    float: right;
+    text-align: center;
+    width: 120px;
+    
+}
+
+.head .drd li ul li{
+    display: none;
+    color: white;
+}
+.head .sidebar .bars,.times{
+    visibility: hidden;
+}
+.head .drd li:hover ul li{
+    display: block;
+    background-color: rgba(193, 209, 1, 0.7);
+    border-radius: 10px;
+}
+.head .drd li a i{
+    color: white;
+    padding: 2px;
+    position: relative;
+    left: 20px;
+    top: -1px;
+    font-size: 90%;
+}
+.head ul li a{
+    display: block;
+    background-color: rgba(0, 255, 88, 0.79);
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+    font-family: cursive;
+    font-size:12px;
+    border-radius: 10px;
+    text-shadow: 0 0 10px black, 0 0 50px black,0 0 70px black;
+}
+.head ul li a:hover{
+    background-color: greenyellow;
+    color: black;
+    transition: all 0.6s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+.head .section_header{
+    width: 600px;
+    height: 300px;
+/*    border: 2px solid black;*/
+    text-align: center;
+    padding: 10px;
+    margin: 35px auto;
+    position: relative;
+    margin-top: 6%;
+}
+.head .section_header h1{
+    color: white;
+    padding: 5px;
+    text-shadow: 0 0 10px black, 0 0 40px black,0 0 50px black;
+    font-size: 2em;
+}
+.head h3{
+    color: white;
+    padding: 5px;
+    text-shadow: 0 0 10px black, 0 0 40px black,0 0 50px black;
+    font-size: 1.5em;
+}
+.head .section_header input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: green;
+}
+
+.head .section_header input[type="submit"]{
+    background:green;
+    color: white;
+}
+.sec{
+    width: 100%;
+/*    height: 350px;*/
+/*    border: 2px solid black;*/
+    background: rgba(116, 107, 107, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.sec h2{
+  position: relative;
+}
+.sec h4{
+    line-height: 40px;
+}
+
+.sec ul{
+    list-style: none;
+/*    border: 2px solid black;*/
+}
+.sec ul .house{
+/*    border: 2px solid black;*/
+    width: 200px;
+    height: 200px;
+    background: white;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+}
+.sec ul .house::before{
+    content: '93';
+    color: black;
+    padding: 5px;
+    border-radius: 50px;
+    background: rgba(209, 209, 209, 0.53);
+}
+.sec ul .house:nth-child(1)::before{
+    content: "23";
+    position: relative;
+    top: -25%;
+    left: 65%;
+}
+.sec ul .house:nth-child(2)::before{
+    content: "44";
+    position: relative;
+    top: -25%;
+    left: 65%;
+}
+.sec ul .house:nth-child(3)::before{
+    content: "63";
+    position: relative;
+    top: -25%;
+    left: 65%;
+}
+.sec ul .house:nth-child(4)::before{
+    content: "78";
+    position: relative;
+    top: -25%;
+    left: 65%;
+}
+.sec ul .house:nth-child(5)::before{
+    content: "88";
+    position: relative;
+    top: -25%;
+    left: 65%;
+}
+.sec ul .house span{
+    color: black;
+    position: relative;
+    top: 20%;
+}
+.sec ul .house i{
+    padding: 5px;
+    position: relative;
+    top: 15%;
+}
+.sec ul .house:hover{
+    background:rgba(0, 198, 0, 0.41);
+    transform: scale(1.05);
+    transition: all 0.6s ease;  
+    color: white;
+}
+.third{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.third h2,#et{
+/*    text-align: left;*/
+    line-height: 30px
+}
+
+.third .items{
+/*    border: 2px solid;*/
+    width: 270px;
+    height: 250px;
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
+    text-align: left;
+    border-left: 1px solid #4e4a4a; 
+    border-right: 1px solid #4e4a4a; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.third .items a:first-of-type{
+/*    border: 2px solid;*/
+    display: block;
+    height: 200px;
+    background: url(pizza2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.third .items:nth-child(4) a:first-of-type{
+    background: url(akzd-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.third .items:nth-child(5) a:first-of-type{
+    background: url(iStock-workplace-health-original-2-scaled.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.third .items:nth-child(6) a:first-of-type{
+    background: url(spagg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.third .items h6{
+    position: relative;
+    background: black;
+    color: white;
+    display: inline;
+    top: -75%;
+    left: 10px;
+    padding: 3px;
+    font-size: 0.9em;
+}
+
+.third .items .dis{
+    float: right;
+    background: red;
+    left: -15px;
+}
+.third .items .info{
+    position: relative;
+    top: -60px;
+    width: 150px;
+    font-weight: 700;
+    left: 10px;
+}
+.third .items a:last-of-type{
+    position: relative;
+    top: -45px;
+    float: left;
+    text-decoration: none;
+    color: green;
+    border: 1px solid green;
+    border-radius: 20%;
+}
+.third .items span{
+    position: relative;
+    top: -45px;
+    float: right;
+    left: -10%;
+}
+.third .items span::after{
+    content: "66";
+    background: grey;
+    position: relative;
+    padding: 2px;
+    top: -20px;
+    left: 15px;
+    border-radius: 20%;
+}
+.third .items:first-of-type span::after{
+    content: "8.7";
+} 
+.third .items:nth-child(4) span::after{
+    content: "8.1";
+} 
+.third .items:nth-child(5) span::after{
+    content: "9.0";
+} 
+.third .items:nth-child(6) span::after{
+    content: "8.9";
+} 
+.third .items:hover{
+    background:rgba(0, 198, 0, 0.41);
+    transform: scale(1.05);
+    transition: all 0.6s ease;  
+    color: white;
+}
+
+
+.four{
+    border: 2px solid transparent;
+    width: 100%;
+    height: 300px;
+    background-position:center;
+    background-repeat: no-repeat;
+   background-size: cover;
+    background-image: url(eater.jpeg)
+}
+.four h5{
+    color: aliceblue;
+    margin-left: 13%;
+    margin-top: 5%;
+    text-shadow:  0 0 4px black;
+}
+.four h3{
+    color: aliceblue;
+    margin-left: 13%;
+    text-shadow:  0 0 4px black;
+}
+.four h4{
+     color: aliceblue;
+    margin-left: 13%;
+    text-shadow:  0 0 4px black;
+}
+.four ul li a button{
+    color: aliceblue;
+    background-color: rgba(7, 186, 0, 0.94);
+    padding: 5px;
+    margin-top: 0.5%;
+    position: relative;
+    left: 13%;
+    border: 2px solid green;
+    border-radius: 20%;
+}
+
+
+
+@media screen and (max-width: 626px){
+    .head .section_header{
+        width: 82%;
+/*        border: 2px solid black;*/
+
+    }
+    .head .section_header input{
+    display: block;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+}
+
+.head .section_header input:nth-child(4){
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+    .head input[type="submit"]{
+    color: white;
+    background-color: green;
+    padding: 10px;
+}    
+    .head .sidebar{
+        position: absolute;
+        width: 200px;
+        background: rgba(0,128,0,0.86);
+        height: 100vh;
+        top: 0;
+        z-index: 1;
+/*        overflow:hidden;*/
+        transition: 1s ease;
+        transform: translateX(-200px);
+    }
+    .head .sidebar .logo:before{
+        content: "Menu";
+        display: block;
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.5em;
+        line-height: 50px;
+    }
+   .head .sidebar  .drd {
+       background: none;
+       position: relative;
+       top: 0;
+       width: 100%;
+}
+
+.head .sidebar .drd li{
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+    .head .sidebar li:hover{
+        background: white;
+        color: black;
+        transition: 1s ease;
+    }
+.head .sidebar ul li a{
+    background:none;
+    font-size: 1.2em;
+    display: block;
+}
+.head .sidebar ul li a:hover{
+    background: none;
+    text-shadow: none;
+} 
+    .head .sidebar label span{
+        position: absolute;
+    padding: 2px;
+    font-size: 30px;
+    top: 30px;
+    color: white;
+    right: -20%;
+}
+    .head .sidebar .bars{
+         visibility: visible;
+   position: relative;
+    top: -10px;
+    padding: 4px;
+    color: white;
+    right: 0px;
+    opacity: 1;
+    transition: 1s ease;
+    }
+    .head .sidebar label .times{
+    visibility: visible;
+   position: absolute;
+    padding: 4px;
+    color: white;
+    left:-70px;
+        top: -20px;
+    opacity: 0;
+    transition: 1s ease;   
+    }
+    
+    #check:checked ~ .sidebar{
+        transform: translateX(0);
+        position: fixed;
+    }
+    #check:checked ~ .sidebar .times{
+    opacity: 1;
+    transition: 1s ease;
+    top: -20px;
+    }
+    #check:checked ~ .sidebar .bars{
+    opacity: 0;
+    transition: 1s ease;
+}

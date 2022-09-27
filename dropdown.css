@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height:100%;
+    width: 200px;
+    position: absolute;
+    background:  rgba(0, 255, 88, 0.79);
+    z-index: 1;
+    transition: 0.5s ease;
+    border-bottom-right-radius: 5%;
+    transform: translateX(-200px);
+}
+.container .head{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    color: aliceblue;
+    text-align: center;
+    background: black
+}
+.container .head ul{
+    width: 100%;
+    list-style: none;  
+}
+.container .head ul li{
+    display: block;
+    width: 100%;
+}
+.container ul li a{
+    color: aliceblue;
+    display: block;
+    text-decoration: none;
+    padding: 15px 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+.container ul li a i{
+    width: 30px;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 5px;
+    border-top-color: 2px solid red;
+}
+.container ul li a:hover{
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+}
+input{
+    -webkit-appearance:none;
+    visibility: hidden;
+    display: none;
+}
+.container label span{
+    padding: 2px;
+    font-size: 30px;
+    top: 30px;
+    color: black;
+    background: red;
+    right: 0;
+    
+}
+#bars{
+    position: absolute;
+    background: red;
+    color: white;
+    font-size: 30px;
+    transform: translateX(40px);
+    opacity: 1;
+}
+
+#times{
+    position: absolute;
+    top: 30px;
+    padding: 4px;
+    color: white;
+    right: 90px;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+#check:checked ~ .container {
+    transform: translateX(0);
+}
+#check:checked ~ .container #bars{
+    transform: translateX(40px);
+    opacity: 0;
+    transition: 1s ease;
+    top: 40px;
+}
+#check:checked ~ .container #times{
+    opacity: 1;
+    transition: 1s ease;
+    right: 0px;
+    top: 0;
+}

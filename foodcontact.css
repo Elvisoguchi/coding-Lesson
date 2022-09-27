@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+background: black;
+}
+.two{
+			display: flex;
+			align-items: center;
+			justify-items: center;
+			/*border: 2px solid black;*/
+			width: 300px;
+			height: 200px;
+			position: absolute;
+/*			top: 30%;*/
+			left: 40%;
+		}
+
+		.two h1{
+			width: 12px;
+			border-radius: 10px;
+			height: 20px;
+			/*border: 2px solid black;*/
+			margin-left: 20px;
+			animation: musik 1s ease infinite;
+			background: white;
+		}
+
+		.two h1:nth-child(1){
+			animation-delay: 0.8s;
+			background: green;
+		}
+
+		.two h1:nth-child(2){
+			animation-delay: 0.6s;
+			background: #eb1768;
+			border-radius: 50%;
+		}
+
+		.two h1:nth-child(3){
+			animation-delay: 0.4s;
+			background: blue;
+		}
+
+		.two h1:nth-child(4){
+			animation-delay: 0.2s;
+			background: #247dee;
+			border-radius: 50%;
+		}
+
+		.two h1:nth-child(5){
+			animation-delay: 0.4s;
+			background: blue;
+		}
+		.two h1:nth-child(6){
+			animation-delay: 0.6s;
+			background: #eb1768;
+		}
+		.two h1:nth-child(7){
+			animation-delay: 0.8s;
+			background: green;
+		}
+
+		.two h1:nth-child(8){
+			animation-delay: 1s;
+			background: brown;
+		}
+		@keyframes musik{
+			0%{height: 20px}
+			50%{height: 40px}
+			100%{height: 20px}
+		}
+h2{
+    color: white;  
+}
+h3{
+    color: aliceblue
+}
+h4{
+    color: aliceblue
+}

@@ -1,0 +1,90 @@
+body{
+	background-color: black;
+	margin: 0;
+}
+.big{ width: 500px;
+	  height: 500px;
+	  background-color: green;
+	  margin-left: 0%;
+}
+.big #small{ background-color: orange;
+	         height: 250px;
+	         width: 250px;
+	         margin-left: 250px;
+	         /*animation:small 1s infinite;*/
+}
+@keyframes small{
+	 /*25%{transform: translateY(50px);}*/
+	 /*25%{transform: translateX(250px);}*/
+	 /*30%{transform: translateX(50px);}*/
+	 /*66%{transform: translateY(50px);}*/
+	 /*80%{transform: translateY(50px); }*/
+	 /*100%{transform: translateX(50px);}*/
+	}
+.big .q{background-color: white;
+	         height: 250px;
+	         width: 250px;
+	         margin-left:0px;
+	         margin-top: 0px;
+	         margin-bottom: 0px;
+	     }
+.big .cir{
+			border: 5px solid black;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top:  20%;
+			left: 20%;
+			border-radius: 50%;
+			border-top: 5px solid red;
+			border-bottom: 5px solid red;
+			animation: cir 7s linear infinite;
+			background-color: brown;
+		}
+@keyframes cir {
+			from{transform: rotate(0deg)}
+			to{transform: rotate(360deg)}
+		}
+	 
+.big #ball{ 
+	                height: 50px;
+	                width: 20px;
+	                position: fixed;
+	                margin-left: 50%;
+	                border-radius: 50%;
+	                /*animation: ball 1s cubic-bezier(0,.82,.51,.98) infinite alternate;;*/
+}
+
+#ball h1{
+	position: absolute;
+	left: -10px;
+	animation: none;
+}
+ #ball h1:nth-child(1){ margin: 5px;
+                        background-color: green;
+                        width: 20px;
+                        height: 20px; 
+                        border-radius: 50px;
+                        animation:  none;
+                    }
+ #ball h1:nth-child(2){margin: 5px;
+                        background-color: black;
+                        width: 20px;
+                        height: 20px; 
+                        border-radius: 50px;}
+ #ball h1:nth-child(3){margin: 5px;
+                        background-color: red;
+                        width: 20px;
+                        height: 20px; 
+                        border-radius: 50px;}
+ #ball h1:nth-child(4){margin: 5px;
+                        background-color: blue;
+                        width: 20px;
+                        height: 20px; 
+                        border-radius: 50px;}
+
+@keyframes ball {
+	        from{transform: translateY(0);}
+            to{transform: translateY(-100px);}
+
+        }

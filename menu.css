@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   width: 100%; 
+}
+#contain{
+    visibility: hidden;
+    position: absolute;
+}
+label, label::before, label::after{
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: black;
+    border-radius: 20px;
+    transition: 1s ease;
+}
+label{
+    top: 5%;
+    transform: translateX(10px);
+    cursor: pointer;
+}
+label::before{
+    content: "";
+    transform: translateY(-10px);
+    -webkit-transform:translateY(-10px);
+}
+label::after{
+    content: "";
+    transform: translateY(10px);
+    -webkit-transform:translateY(10px);
+}
+#contain:checked + label{
+    width: 0;
+}
+
+#contain:checked + label::before{
+    transform: rotate(45deg);
+}
+#contain:checked + label::after{
+    transform: rotate(-45deg);
+}
+#contain:checked ~ sidebar{
+   transform: translateX(0);
+}
+#contain:checked ~ label{
+    transform: translateX(290px);
+}
+sidebar{
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    background: linear-gradient(50deg,rgba(100, 0, 250, 0.3),#247dee );
+    padding: 15px;
+    margin-left: -10px;
+    transition: 1s ease;
+    transform: translateX(-300px);
+}
+sidebar h1{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: aliceblue;
+}
+sidebar i{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+sidebar span{
+    color: aliceblue;
+    font-size: 1.4em;
+    padding: 10px;
+}
+sidebar ul{
+    list-style: none;
+}
+sidebar ul li{
+    line-height: 60px;
+    border-bottom: 2px solid white;
+}
+sidebar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.1em;
+}
+sidebar ul li:hover{
+     transform: translateX(9px);
+    transition: 1s ease;
+}
+sidebar ul li:hover a{
+    letter-spacing: 4px;
+    color: #247dee;
+    transition: 1s ease;
+}
+sidebar a[href="#r"]{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    margin: 5px;
+    background: white;
+    color: black;
+    font-weight: bolder;
+}
+sidebar a[href="#r"]:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 1s ease; 
+}
+section{
+/*    background-image:url(eater.jpeg);*/
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    transition: 1s ease;
+}
+#contain:checked ~ section{
+    margin-left: 285px;
+
+}
+tube{
+    border: 2px solid black;
+}
+
+tube icon{
+    position: relative;
+    right: -7%;
+    color: green;
+}
+tube goo{
+    margin-top: 0%;
+    position: relative;
+    left: 30%;
+    padding: 9px;
+    text-align: center;
+}
